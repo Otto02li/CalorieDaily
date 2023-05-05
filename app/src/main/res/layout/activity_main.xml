@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--功能区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <!--1.编辑行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--left:Manage Calorie-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+
+                android:text="Manage Calorie"
+                android:layout_gravity="left"
+                android:textSize="25dp">
+            </TextView>
+
+            <!--EDIT_btn-->
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="EDIT"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp">
+            </Button>
+        </LinearLayout>
+
+        <!--2.日期开始行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--left:Begin-->
+            <TextView
+                android:id="@+id/tv_begin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Begin"
+                android:layout_gravity="left"
+                android:textSize="25dp">
+            </TextView>
+
+            <!--BEGIN_btn-->
+            <Button
+                android:id="@+id/btn_begin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="click"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp">
+            </Button>
+
+        </LinearLayout>
+
+        <!--3.日期结束行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!--left:End-->
+            <TextView
+                android:id="@+id/tv_end"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="End"
+                android:layout_gravity="left"
+                android:textSize="25dp">
+            </TextView>
+
+            <!--END_btn-->
+            <Button
+                android:id="@+id/btn_end"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="click"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp">
+            </Button>
+        </LinearLayout>
+        <!--4退出行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+            </TextView>
+
+            <!--QUERY_btn-->
+            <Button
+                android:id="@+id/btn_query"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="QUERY"
+                android:textSize="13dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp">
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--空布局美观占位-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </LinearLayout>
+
+    <!--折线图区-->
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5" />
+
+</LinearLayout>
